@@ -25,7 +25,7 @@ metadata:
 
 ## 阶段 2 · 脚本合成
 
-用 Python 3.11+ 和 Pillow 执行。环境缺少 Pillow 时，从 Skill 目录执行 `python -m pip install -r scripts/requirements.txt`，或使用宿主已经准备好的匹配环境。
+用 Python 3.11+ 和 Pillow 执行。环境缺少 Pillow 时，从 Skill 目录执行 `python -m pip install -r scripts/requirements.txt`，或使用宿主已经准备好的匹配环境。从源码安装且字体缺失时，先执行 `python scripts/install_fonts.py` 获取并校验锁定的字体。含字体的安装包可直接离线合成。
 
 ```text
 python scripts/compose_poster.py --photo "input/decor.jpg" --sketch "input/sketch.png" --title "花信入庭" --output "output/poster.png"
